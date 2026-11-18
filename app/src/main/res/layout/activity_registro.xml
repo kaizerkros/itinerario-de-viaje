@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crear_cuenta" />
+        <EditText android:id="@+id/edtNombre" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/nombre_hint" />
+        <EditText android:id="@+id/edtRut" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/rut_hint" android:inputType="text" />
+        <EditText android:id="@+id/edtCorreoRegistro" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/correo_hint" android:inputType="textEmailAddress" />
+        <EditText android:id="@+id/edtContrasenaRegistro" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/contrasena_hint" android:inputType="textPassword" />
+        <EditText android:id="@+id/edtRepetirContrasena" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/repetir_contrasena" android:inputType="textPassword" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/tipo_viajero" />
+        <RadioGroup android:id="@+id/rbgTipoViaje" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbNaturaleza" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rb_naturaleza" />
+            <RadioButton android:id="@+id/rbCiudad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rb_ciudad" />
+            <RadioButton android:id="@+id/rbPlaya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rb_playa" />
+        </RadioGroup>
+        <CheckBox android:id="@+id/chkTerminos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terminos" />
+        <Button android:id="@+id/btnRegistrar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/registrar" />
+    </LinearLayout>
+</ScrollView>

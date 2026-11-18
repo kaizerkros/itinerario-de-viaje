@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ia_viajera" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/consulta" />
+        <EditText android:id="@+id/edtConsultaIA" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="120dp" android:gravity="top" android:hint="@string/consulta_hint" android:inputType="textMultiLine" />
+        <Button android:id="@+id/btnPreguntarIA" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/preguntar" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/respuesta" android:textStyle="bold" />
+        <TextView android:id="@+id/txtRespuestaIA" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:padding="16dp" android:background="@color/fondo_tarjeta" android:text="@string/respuesta_ejemplo" />
+    </LinearLayout>
+</ScrollView>

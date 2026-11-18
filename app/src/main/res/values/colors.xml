@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primario">#006B5F</color>
+    <color name="primario_variante">#004D43</color>
+    <color name="fondo">#F4F7F6</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#1B1C1C</color>
+    <color name="texto_secundario">#5F6362</color>
+</resources>
