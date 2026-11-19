@@ -6,6 +6,9 @@
         <item name="android:colorAccent">@color/primario</item>
         <item name="android:windowBackground">@color/fondo</item>
         <item name="android:textColorPrimary">@color/texto_principal</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/fondo</item>
     </style>
     <style name="EstiloTituloViaje">
         <item name="android:textSize">20sp</item>
@@ -17,5 +20,9 @@
         <item name="android:textColor">@color/texto_principal</item>
         <item name="android:padding">12dp</item>
         <item name="android:background">@color/fondo_tarjeta</item>
+    </style>
+    <style name="EstiloBotonViaje" parent="android:style/Widget.Material.Button">
+        <item name="android:backgroundTint">@color/primario</item>
+        <item name="android:textColor">@color/texto_boton</item>
     </style>
 </resources>

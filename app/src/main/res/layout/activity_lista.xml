@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/fondo">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
         <TextView style="@style/EstiloTituloViaje" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/mis_viajes" />
-        <Button android:id="@+id/btnAgregar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agregar" />
-        <Button android:id="@+id/btnPerfil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="@string/perfil" />
+        <Button android:id="@+id/btnAgregar" style="@style/EstiloBotonViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agregar" />
+        <Button android:id="@+id/btnPerfil" style="@style/EstiloBotonViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="@string/perfil" />
     </LinearLayout>
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
-            <LinearLayout android:id="@+id/cardViaje1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:layout_marginBottom="12dp" android:background="@color/fondo_tarjeta">
-                <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valparaíso" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/12/2026 · 4 días · $250.000" android:textColor="@color/texto_secundario" />
-            </LinearLayout>
-            <LinearLayout android:id="@+id/cardViaje2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:layout_marginBottom="12dp" android:background="@color/fondo_tarjeta">
-                <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Torres del Paine" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="05/01/2027 · 7 días · $680.000" android:textColor="@color/texto_secundario" />
-            </LinearLayout>
-            <LinearLayout android:id="@+id/cardViaje3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@color/fondo_tarjeta">
-                <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="San Pedro de Atacama" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18/02/2027 · 5 días · $520.000" android:textColor="@color/texto_secundario" />
-            </LinearLayout>
-        </LinearLayout>
+        <LinearLayout android:id="@+id/contenedorViajes" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp" />
     </ScrollView>
 </LinearLayout>

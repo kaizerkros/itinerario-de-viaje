@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
         <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crear_cuenta" />
-        <EditText android:id="@+id/edtNombre" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/nombre_hint" />
-        <EditText android:id="@+id/edtRut" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/rut_hint" android:inputType="text" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:labelFor="@id/edtNombre" android:text="@string/nombre" />
+        <EditText android:id="@+id/edtNombre" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:inputType="textPersonName" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:labelFor="@id/edtRut" android:text="@string/rut" />
+        <EditText android:id="@+id/edtRut" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:inputType="text" />
         <EditText android:id="@+id/edtCorreoRegistro" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/correo_hint" android:inputType="textEmailAddress" />
         <EditText android:id="@+id/edtContrasenaRegistro" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/contrasena_hint" android:inputType="textPassword" />
         <EditText android:id="@+id/edtRepetirContrasena" style="@style/EstiloCampoViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/repetir_contrasena" android:inputType="textPassword" />
@@ -15,6 +17,6 @@
             <RadioButton android:id="@+id/rbPlaya" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rb_playa" />
         </RadioGroup>
         <CheckBox android:id="@+id/chkTerminos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terminos" />
-        <Button android:id="@+id/btnRegistrar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/registrar" />
+        <Button android:id="@+id/btnRegistrar" style="@style/EstiloBotonViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/registrar" />
     </LinearLayout>
 </ScrollView>

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fondo">
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fitsSystemWindows="true">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
         <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detalle_viaje" />
-        <TextView style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Valparaíso" />
-        <TextView android:id="@+id/txtFechaDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="20/12/2026 al 24/12/2026" />
-        <TextView android:id="@+id/txtDuracionDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="4 días" />
-        <TextView android:id="@+id/txtPresupuestoDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Presupuesto: $250.000" />
-        <TextView android:id="@+id/txtActividades" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="16dp" android:background="@color/fondo_tarjeta" android:text="Día 1: Paseo por el puerto\nDía 2: Tour por los cerros\nDía 3: Playa y gastronomía\nDía 4: Compras y regreso" />
-        <Button android:id="@+id/btnEditar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/editar" />
-        <Button android:id="@+id/btnMarcar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/marcar" />
-        <Button android:id="@+id/btnEliminar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/eliminar" />
+        <TextView android:id="@+id/txtDestinoDetalle" style="@style/EstiloTituloViaje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/viaje_valparaiso" />
+        <TextView android:id="@+id/txtFechaDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/fecha_detalle_ejemplo" />
+        <TextView android:id="@+id/txtDuracionDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/duracion_detalle_ejemplo" />
+        <TextView android:id="@+id/txtPresupuestoDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/presupuesto_detalle_ejemplo" />
+        <TextView android:id="@+id/txtEstadoDetalle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/estado_pendiente" />
+        <TextView android:id="@+id/txtActividades" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="16dp" android:background="@color/fondo_tarjeta" android:text="@string/actividades_detalle_ejemplo" />
+        <Button android:id="@+id/btnEditar" style="@style/EstiloBotonViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/editar" />
+        <Button android:id="@+id/btnMarcar" style="@style/EstiloBotonViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/marcar" />
+        <Button android:id="@+id/btnEliminar" style="@style/EstiloBotonViaje" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/eliminar" />
     </LinearLayout>
 </ScrollView>

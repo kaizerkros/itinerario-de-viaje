@@ -6,4 +6,7 @@
     <color name="fondo_tarjeta">#1E2423</color>
     <color name="texto_principal">#EFF1F0</color>
     <color name="texto_secundario">#BEC6C4</color>
+    <color name="icono_contraste">#FFFFFF</color>
+    <color name="icono_acento">#004D43</color>
+    <color name="texto_boton">#00332D</color>
 </resources>
